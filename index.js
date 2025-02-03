@@ -128,7 +128,7 @@ botonAñadir.forEach((nota, i) => {
         });
         
         const eliminarNota = () => {
-            const notaEliminar = document.querySelector('.anotacion .selected');
+            const notaEliminar = document.querySelector('.anotacion.selected');
             notaEliminar.remove()
         }
         botonEliminar.forEach((botonEliminar) => {

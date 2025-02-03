@@ -89,10 +89,13 @@ botonAñadir.forEach((nota, i) => {
         anotacion.addEventListener('click', seleccionado);   
         
         const marcarImportante = () => {
-            if(marcaImportanteDiv.textContent === "importante") {
+            const anotacionSeleccionada = document.querySelector('.selected');
+            if(anotacionSeleccionada) {
+                if(marcaImportanteDiv.textContent === "importante") {
                 marcaImportanteDiv.textContent = " ";
-            } else {
-                marcaImportanteDiv.textContent = "importante";
+                } else {
+                    marcaImportanteDiv.textContent = "importante";
+                }
             }
         }
         botonMarcarImportante.forEach((boton) => {

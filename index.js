@@ -67,6 +67,8 @@ botonAñadir.forEach((nota, i) => {
         text.className = 'texto';
         checkboxTextoDiv.appendChild(text)
 
+        text.focus()
+
         text.addEventListener('blur', () => {
             textoContainer.textContent = ' ';
             const textArray = text.value.split('');
@@ -110,6 +112,7 @@ botonAñadir.forEach((nota, i) => {
             comentarioInput.className = 'inputComentario';
             if(comentarioSeleccionado) {
                 comentarioDiv.appendChild(comentarioInput);
+                comentarioInput.focus();
             }
 
             comentarioInput.addEventListener('blur', () => {
